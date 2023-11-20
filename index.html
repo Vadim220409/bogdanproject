@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon" />
+    <title>Games & Fun</title>
+  </head>
+
+  <body>
+    <header class="mainHeader">
+      <form action="" class="leapYear" id="leapYearForm">
+        <label for="leapYearInput" style="font-size: 25px"
+          >Перевір рік, в якому ти народився</label
+        >
+        <div class="inpContent">
+          <input
+            type="text"
+            id="leapYearInput"
+            class="leapCheckInput"
+            placeholder="Рік народження"
+          />
+          <button class="checkLeapBtn">?</button>
+          <label for="" class="leapDateMessage"></label>
+        </div>
+      </form>
+
+      <hr />
+
+      <form action="" class="guessNum" id="guessNumForm">
+        <label for="guessNumInput" style="font-size: 25px">Вгадай число</label>
+        <div class="inpContent">
+          <input
+            type="text"
+            id="guessNumInput"
+            class="guessNumInput"
+            placeholder="Введіть число (1-100)"
+          />
+          <button class="guessNumBtn">?</button>
+          <label for="" class="guessNumMessage"></label>
+        </div>
+      </form>
+
+      <hr />
+
+      <form action="" class="calculator" id="calculatorForm">
+        <label for="calculatorInputA" style="font-size: 25px"
+          >Калькулятор</label
+        >
+        <div class="calculatorContent">
+          <input
+            type="text"
+            id="calculatorInputA"
+            class="calculatorInputA"
+            placeholder="A"
+          />
+          <div class="calculatorOperators">
+            <button class="calculatorAdd">+</button>
+            <button class="calculatorSub">-</button>
+            <button class="calculatorDiv">/</button>
+            <button class="calculatorMult">*</button>
+          </div>
+          <input
+            type="text"
+            id="calculatorInputB"
+            class="calculatorInputB"
+            placeholder="B"
+          />
+          <button class="calculatorEqual">=</button>
+          <label for="" class="calculatorOutput">?</label>
+        </div>
+      </form>
+
+      <hr />
+
+      <form action="" class="football">
+        <label for="" style="font-size: 25px">Футбол</label>
+        <div class="footballField">
+          <img src="./img/ball.png" alt="Football Ball" class="footballBall" />
+        </div>
+      </form>
+
+      <hr />
+
+      <form action="" class="scientists" id="scientistsForm">
+        <label for="scientists" style="font-size: 25px">Важливі вчені</label>
+        <table class="scientistsTable">
+          <tr>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+          </tr>
+          <tr>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+          </tr>
+          <tr>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+          </tr>
+          <tr>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+            <th class="scientistTableSquare"></th>
+          </tr>
+        </table>
+        
+        <table class="filteringButtons">
+          <tr>
+            <th><button id="filter" class="filterXIX">Народилися в ХІХ ст.</button></th>
+            <th><button id="filter" class="filterAZSort">Сортувати A-Z</button></th>
+          </tr>
+          <tr>
+            <th><button id="filter"class="filterLifeTimeSort">Сортувати за прожитми роками</button></th>
+            <th><button id="filter"class="filterLastestBirth">Народився найпізніше</button></th>
+          </tr>
+          <tr>
+            <th><button id="filter"class="filterScientistBirth">______ ______ народився у...</button></th>
+            <th><button id="filter"class="filterSurnameC">Знайти фамілії на "С"</button></th>
+          </tr>
+          <tr>
+            <th><button id="filter"class="filterNameA">Видалити імена на "А"</button></th>
+            <th><button id="filter"class="filterLifeLongestShortest">Хто прожив найдовше/найменше</button></th>
+          </tr>
+        </table>
+      </form>
+    </header>
+
+    <span class="copyright">Створено Б. Горовим ©</span>
+    <script src="./main.js"></script>
+  </body>
+</html>
